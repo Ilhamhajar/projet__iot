@@ -1,0 +1,24 @@
+<head>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+<body>
+    {% load static %}
+  <div class="navbar"  style="background-image: url({% static 'images/HD.jpg' %}) ; ">
+    <nav >
+
+            <ul>
+                    <li>  <a >Table</a></li>
+                    <li>  <a href="/dht/myChart/" >Chart</a></li>
+                    <li>  <a >Json</a></li>
+            </ul>
+
+
+
+
+
+    </nav>
+</div>
+{% block i %}
+  {% endblock %}
