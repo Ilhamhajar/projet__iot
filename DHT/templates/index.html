@@ -1,17 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
     {% load static %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
 
 </head>
 <body>
     {% load static %}
   <div class="navbar"  style="background-image: url({% static 'images/HD.jpg' %}) ; ">
     <nav >
-
+        <h2></h2>
             <ul>
-                    <li>  <a >Table</a></li>
-                    <li>  <a href="/dht/myChart/" >Chart</a></li>
-                    <li>  <a >Json</a></li>
+                    <li>  <a href="/table/" >Table</a></li>
+                    <li>  <a href="/myChart/" >Chart</a></li>
+                    <li>  <a href="/data/" >Json</a></li>
             </ul>
 
 
@@ -22,3 +27,5 @@
 </div>
 {% block i %}
   {% endblock %}
+</body>
+</html>

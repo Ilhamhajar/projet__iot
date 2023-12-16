@@ -1,14 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
 {% extends 'base.html' %}
 {% block i %}
 {% load static %}
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://coade.jquery.com/jquery-3.6.0.min.js"></script>
 <div  class="show-row">
     <h3>Dashbord/Table/Last</h3>
        <form method="post" id="my-form" >
         {% csrf_token %}
         {{form}}
     </form>
-    
+
 </div>
 <div class="projects">
 
@@ -20,7 +27,7 @@
             <th>Nom <img  id="Capteur-logo" src="{% static 'images/dht11.jpg' %}" alt="Capteur Image"></th>
             <th>Temperature <img  id="Temperature-logo" src="{% static 'images/temp.jpg' %}" alt="Temperature Image"></th>
             <th>Humidity  <img id="Humidity-logo" src="{% static 'images/humidity.jpg' %}" alt="Humidity Image"></th>
-            <th>Date <img id="TIMELOGO" src="{% static 'images/time.jpg' %}" alt="TIME Image"> </th>
+            <th>Date <img id="humiditi-logo" src="{% static 'images/time.jpg' %}" alt="Humidity Image"> </th>
         </tr>
     </thead>
     <tbody>
@@ -31,7 +38,7 @@
             <td>{{ valeurs.hum }}</td>
             <td>{{ valeurs.date }}</td>
         </tr>
-       
+
     </tbody>
 </table>
 </div>
@@ -40,7 +47,7 @@
   </div>
 
   <script>
-       
+
     var selectEl = $('#mon_select');
 
     selectEl.change(function() {
@@ -66,6 +73,8 @@ if (xhr.status === 200) {
 xhr.send();
 });
 
- 
+
 </script>
 {% endblock i %}
+</body>
+</html>
