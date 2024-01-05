@@ -129,8 +129,8 @@ def chart_data_mois(request):
 
 
 def sendtele(request, message):
-    token = '6925114629:AAFzLVxywlwOSCgKfUP-NCGbDTlqE-hF5Ec'
-    rece_id = '6925114629'
+    token = '6317292446:AAH_syCW5E9ZwMEg6ZevKSvvda0L9OM-3LY'
+    rece_id = '6644914334'
     bot = telepot.Bot(token)
     bot.sendMessage(rece_id, message)
     print(bot.sendMessage(rece_id, 'OK.'))
